@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <h1 class="rainbow">Registration Form</h1>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <div>
+            <label class="rainbow" for="name">Name</label>
+            <input id="name">
+        </div>
+        <div>
+            <label class="rainbow">Gender</label>
+            <label class ="rainbow">
+                <input type="radio" name="gender" value="male"> Male </label>
+                <label class ="rainbow">
+                <input type="radio" name="gender" value="female">Female</label>
+        </div>
+        <div>
+            <label class="rainbow">How did you hear about us?</label>
+            </br>
+
+            <select id="reasons">
+                <option value="grader">You are the one who is grading the project</option>
+                <option value="nosey">You are just nosey</option>
+                <option value="accident">This is was an accident</option>
+                <option value="huh">Huh? What is this? Get me out of here!!!</option>
+            </select>
+        </div>
+        <div>
+            <label class="rainbow">Choose the categories that interest you</label>
+            <label class ="rainbow">
+                <input type="checkbox" name="category" value="poltics">Political</label>
+                <label class ="rainbow">
+                <input type="checkbox" name="category" value="fun">Funny</label>
+                <label class ="rainbow">
+                <input type="checkbox" name="category" value="haha">Hilarious</label>
+
+        </div>
+        <div class="submit">
+            <input type="submit" value="register">
+        </div>
+    </form>
+
+</body>
+
+</html>
